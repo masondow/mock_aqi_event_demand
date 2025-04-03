@@ -1,0 +1,51 @@
+# R and RStudio
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+.Rproj.user/
+.Rproj.user
+*.Rproj
+
+# Environment and credentials
+*.Renviron
+*.env
+*.DS_Store
+*.log
+
+# Packrat / renv (R environments)
+packrat/
+renv/library_*/ 
+renv/python/
+renv/sandbox/
+renv/staging/
+renv.lock
+
+# Output files
+*.csv
+*.xlsx
+*.pdf
+*.png
+*.jpeg
+*.html
+
+# Quarto / RMarkdown
+*.utf8.md
+*.knit.md
+*.nb.html
+_cache/
+*.qmd
+
+# Temporary / system files
+*.tmp
+*.bak
+~$*
+
+# Ignore data files (except if explicitly versioned)
+data/*.csv
+!data/README.md
+
+# Ignore project-specific files
+*.iml
+.idea/
+.vscode/
