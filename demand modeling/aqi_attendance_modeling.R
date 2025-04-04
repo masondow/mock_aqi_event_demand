@@ -13,7 +13,7 @@ ggplot(data, aes(x = aqi, y = realized_attendance)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE, color = "blue") +
   labs(title = "AQI vs Realized Attendance, Wa-Griz Football Home Games 2022-2024",
-       x = "AQI",
+       x = "PM2.5 AQI",
        y = "Realized Attendance")
 
 # ---- Step 2: Linear regression model ----
@@ -30,7 +30,7 @@ data$fitted <- fitted(model)
 ggplot(data, aes(x = aqi, y = residuals)) +
   geom_point() +
   geom_hline(yintercept = 0, linetype = "dashed") +
-  labs(title = "Residuals vs AQI",
+  labs(title = "Residuals vs PM2.5 AQI",
        y = "Residuals")
 
 # ---- Step 4: Model Fit Metrics ----
